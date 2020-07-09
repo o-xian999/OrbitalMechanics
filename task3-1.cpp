@@ -4,7 +4,7 @@
 using namespace std;
 
 double r2(double x){
-  double r_2 = exp((8 + 0.5663 + (0.4516 * x)/((1.4117-0.5662) * x - 1.4117) - 3 * log(x))/3);
+  double r_2 = exp((8 + 0.5663 + (0.4516 * x)/(0.8456 * x - 1.4117) - 3 * log(x))/3);
   return r_2;
 }
 
@@ -13,7 +13,7 @@ double ramda(double x){
   return ram;
 }
 double e(double x, double y){
-  return pow((0.4516 * 1.4117 * x)/((1.4117 - 0.5662) * y - 1.4117), 2);
+  return (0.4516 * 1.4117 * x)/pow(((1.4117 - 0.5662) * y - 1.4118), 2);
 }
 
 double r_new(double a, double b, double c){
